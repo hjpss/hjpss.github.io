@@ -29,20 +29,20 @@ These are the three objects, each to be buried in a world. A golden apple, an ol
 [[I don&#39;t understand the apple, can you send me back to the apple?-&gt;apple]]
 [[I don&#39;t understand the key, can you send me back to the key?-&gt;key]]</tw-passagedata><tw-passagedata pid="5" name="diverge" tags="" position="101,399.5" size="100,100">If you drop the key in someone else&#39;s home, you and your family will have to live inside another person&#39;s home and it will be cramped and awkward for everyone.
 [[Fine, I won&#39;t drop the key in someone else&#39;s home.-&gt;pen]]</tw-passagedata><tw-passagedata pid="6" name="The doors" tags="" position="502,400.5" size="100,100">&lt;img src=&quot;https://media.textadventures.co.uk/coverart/bc777079-2e03-45e6-9a70-ddf9b6531233.jpg&quot; width=&quot;768&quot;&gt;
-So there are three doors, to three different worlds, each inhabited by ordinary humans. You have three objects, each to be buried in the ground. An apple for justice, a key for a new home, and a pen for change.
+So there are three doors to three different worlds, each inhabited by ordinary humans. You have three objects, each to be buried in the ground. An apple for justice, a key for a new home, and a pen for change.
 
-You can meet two people though each door. You might be able to ask them different questions depending on where you&#39;ve visited, so check back in on the people you are most interested in.
+You can meet two people though each door. You will be able to ask them different questions depending on where you&#39;ve visited, so check back in on the people you are most interested in.
 
-[[I walk through the blue door.-&gt;The Blue Door]]
-[[I walk through the red door.-&gt;The Red Door]]
-[[I walk through the green door.-&gt;The Green Door]]
+[[I walk through the Blue Door.-&gt;The Blue Door]]
+[[I walk through the Red Door.-&gt;The Red Door]]
+[[I walk through the Green Door.-&gt;The Green Door]]
 (if:(history: where its name contains &quot;The Red Door&quot;)&#39;s length &gt;= 1)[(if:(history: where its name contains &quot;The Blue Door&quot;)&#39;s length &gt;= 1)[(if:(history: where its name contains &quot;The Green Door&quot;)&#39;s length &gt;= 1)[[[I am ready to bury the objects.-&gt;the choice]]]]]</tw-passagedata><tw-passagedata pid="7" name="The Green Door" tags="" position="700,601.5" size="100,100">This is the world behind the green door. In this world, everyone has what they need, and everyone has some of what they want. Some people have more than others, but not so much that it fosters jealousy.
 
 There has never been any wrongdoing in this world. There has never been a murder. There has never been any theft. There has never even been a violent confrontation. There has never been any kind of hurtful lying or even any bullying. There has never been any wrongdoing in this world. 
 
 This world also has an incredibly effective system that deals with wrongdoing should it ever happen. Each person in this world is granted rights that are fairly enforced, and each person feels that they are fairly represented in the law. Wrongdoing has never happened, but they are certainly prepared for it nonetheless.
 
-&#39;&#39;But this world has a secret.&#39;&#39; In the center of this world&#39;s largest city, there is a child locked in a cage. This child is shown no love. This child is given only the bare minimum to keep it alive. This child was never even given a name. Should the child be set free, or have their suffering be lessened in any way, another child must take their place. This is the spell cast upon the world behind the Green Door. The prosperity of this world depends on the horrible suffering of just this one child. Should the suffering stop, and its inhabitants refuse to replace the child, the buildings of this world would crumble into dust, and the people would be left with nothing. Everyone in this world, when they are old enough to understand, is brought to the city center to see the child&#39;s suffering for themselves.
+&#39;&#39;But this world has a secret.&#39;&#39; In the center of this world&#39;s largest city, there is a child locked in a cage. This child is shown no love. This child is given only the bare minimum to keep the child alive. This child was never even given a name. Should the child be set free, or have their suffering be lessened in any way, another child must take their place. This is the spell cast upon the world behind the Green Door. The prosperity of this world depends on the horrible suffering of this child. Should the suffering stop, and its inhabitants refuse to replace the child, the buildings of this world would crumble into dust, and the people would be left with nothing. Everyone in this world, when they are old enough to understand, must be brought to the city center to see the Child&#39;s suffering for themselves.
 &lt;img src=&quot;https://media.cntraveler.com/photos/58d2c0a97e623821b9f3181d/16:9/w_2048,h_1152,c_limit/yoshinoyama--japan-GettyImages-488852217.jpg&quot; width=&quot;768&quot;&gt;
 (if:(history: where its name contains &quot;the child&quot;)&#39;s length is 0)[[[Approach someone relaxing out at the front of their house.-&gt;green happy]]]
 (if:(history: where its name contains &quot;the child&quot;)&#39;s length &gt;= 1)[[[Approach someone relaxing out at the front of their house-&gt;silence green]]]
@@ -50,22 +50,22 @@ This world also has an incredibly effective system that deals with wrongdoing sh
 [[Go back to the three doors.-&gt;The doors]]
 (if:(history: where its name contains &quot;The Red Door&quot;)&#39;s length &gt;= 1)[(if:(history: where its name contains &quot;The Blue Door&quot;)&#39;s length &gt;= 1)[(if:(history: where its name contains &quot;The Green Door&quot;)&#39;s length &gt;= 1)[[[I am ready to bury the objects.-&gt;the choice]]]]]</tw-passagedata><tw-passagedata pid="8" name="The Red Door" tags="" position="700,400.5" size="100,100">This is the world behind the red door. In this world, everyone has what they need, and everyone has some of what they want. Some people have more than others, but not so much that it fosters jealousy. 
 
-There is a lot of wrongdoing in this world. There are some murders, assaults, and violent confrontations every month on every block. There are also thefts, arson, and threats. There is enough wrongdoing that people are afraid to go out at night. There is enough wrongdoing that everyone knows at least one person who is a victim of a serious wrongdoing, or has experienced such wrongdoing themselves. But there is not enough wrongdoing to make people living in this world completely afraid of everyone that they meet.
+There is a lot of wrongdoing in this world. There are murders, assaults, and violent confrontations every week on every block. There are also thefts, arson, and threats. There is enough wrongdoing that people are afraid to go out, whether it is day or night. There is enough wrongdoing that everyone knows many people who were victims of serious wrongdoing, and has experienced the effects of such serious wrongdoing themselves. Everyone in this world lives with the constant threat of horrible wrongs.
 
-Although this world experiences a lot of wrongdoing, it has an incredibly effective system that deals with wrongdoing. People that commit wrongs are almost always caught. They are given a fair trial in the eyes of every reasonable citizen. If someone is judged guilty of wrongdoing, the system that deals with wrongdoing tries to find a way to rehabilitate the guilty person while considering the impact that the wrongdoing had on others, and the impact that the wrongdoing had on the community. Each person in this world is granted rights that are fairly enforced, and each person feels that they are fairly represented in the law.
+Although this world experiences an enormous amount of serious wrongdoing, it has an incredibly effective system that rehabilitates wrongdoers and tries to address the harms that wrongdoers cause. People that commit wrongs are almost always caught. They are given a fair trial in the eyes of every reasonable citizen. If someone is judged guilty of wrongdoing, the system that deals with wrongdoing tries to find a way to rehabilitate the guilty person while considering the impact that the wrongdoing had on others, and the impact that the wrongdoing had on the community. Each person in this world is granted rights that are fairly enforced, and each person feels that they are fairly represented in the law.
 &lt;img src=&quot;https://i2.wp.com/theluxurytravelexpert.com/wp-content/uploads/2020/09/most-beautiful-villages-in-Italy-1.jpg&quot; width=&quot;768&quot;&gt;
 [[Approach a woman walking quickly to the courthouse in judges clothing.-&gt;red happy]]
 (if:(history: where its name contains &quot;red unhappy all&quot;)&#39;s length is 0)[[[Approach a man laying flowers on top of a grave.-&gt;red unhappy]]]
 (if:(history: where its name contains &quot;red unhappy all&quot;)&#39;s length &gt;= 1)[[[Check up on the man laying flowers on top of a grave.-&gt;silence red]]]
 [[Go back to the three doors.-&gt;The doors]]
-(if:(history: where its name contains &quot;The Red Door&quot;)&#39;s length &gt;= 1)[(if:(history: where its name contains &quot;The Blue Door&quot;)&#39;s length &gt;= 1)[(if:(history: where its name contains &quot;The Green Door&quot;)&#39;s length &gt;= 1)[[[I am ready to bury the objects.-&gt;the choice]]]]]</tw-passagedata><tw-passagedata pid="9" name="The Blue Door" tags="" position="700,199.5" size="100,100">This is the world behind the blue door. In this world, everyone has what they need, and everyone has some of what they want. Some people have more than others, but not so much that it fosters jealousy. 
+(if:(history: where its name contains &quot;The Red Door&quot;)&#39;s length &gt;= 1)[(if:(history: where its name contains &quot;The Blue Door&quot;)&#39;s length &gt;= 1)[(if:(history: where its name contains &quot;The Green Door&quot;)&#39;s length &gt;= 1)[[[I am ready to bury the objects.-&gt;the choice]]]]]</tw-passagedata><tw-passagedata pid="9" name="The Blue Door" tags="" position="700,198.5" size="100,100">This is the world behind the blue door. In this world, everyone has what they need, and everyone has some of what they want. Some people have more than others, but not so much that it fosters jealousy. 
 
 It just so happens to be that there has never been any wrongdoing in this world. There has never been a murder. There has never been any theft. There has never even been a violent confrontation. There has never been any kind of hurtful lying or even any bullying. There has never been any wrongdoing in this world. 
 
 Because this world has never experienced any wrongdoing, nobody has ever thought of what to do if there was wrongdoing. There is no wrongdoing, but there are also no laws. There are no judges. No lawyers either. There is nobody that plays the role of law enforcement. Nothing that might be considered a system of justice exists here. It&#39;s just ordinary people that have so far managed to avoid any kind of wrongdoing.
 &lt;img src=&quot;http://cdn.cnn.com/cnnnext/dam/assets/201009100355-11-ghana-things-to-do.jpg&quot; width=&quot;768&quot;&gt;
 [[Approach a smiling gardener tending to some flowers.-&gt;blue happy]]
-[[Approach a terrified man you spot peeking out at you from between the curtains of his house.-&gt;blue unhappy]]
+[[Approach a terrified man you spot peeking out at you from between the blinds of his house.-&gt;blue unhappy]]
 [[Go back to the three doors.-&gt;The doors]]
 (if:(history: where its name contains &quot;The Red Door&quot;)&#39;s length &gt;= 1)[(if:(history: where its name contains &quot;The Blue Door&quot;)&#39;s length &gt;= 1)[(if:(history: where its name contains &quot;The Green Door&quot;)&#39;s length &gt;= 1)[[[I am ready to bury the objects.-&gt;the choice]]]]]</tw-passagedata><tw-passagedata pid="10" name="blue happy" tags="" position="849,48.5" size="100,100">You approach the gardener.
 
@@ -84,7 +84,7 @@ Because this world has never experienced any wrongdoing, nobody has ever thought
 (if:(history: where its name contains &quot;The Green Door&quot;)&#39;s length &gt;= 1)[[[Ask about the world behind the Green Door.-&gt;blue unhappy green]]]
 [[Go back to entrance.-&gt;The Blue Door]]</tw-passagedata><tw-passagedata pid="12" name="red happy" tags="" position="853,325.5" size="100,100">You approach the woman.
 
-&quot;A visitor? I need to get to the court house to resolve some cases but I am happy to chat until I am needed inside.&quot;
+&quot;A visitor? I need to get to the court house to resolve some cases but I am happy to chat until I am needed inside. The weekly murders, arsons, and violent assaults really keep us judges busy.&quot;
 &lt;img src=&quot;https://scholarlykitchen.sspnet.org/wp-content/uploads/2020/06/iStock-1090431444.jpg&quot; width=&quot;768&quot;&gt;
 [[Ask about living in the world behind the Red Door.-&gt;red happy red]]
 (if:(history: where its name contains &quot;The Blue Door&quot;)&#39;s length &gt;= 1)[[[Ask about the world behind the Blue Door.-&gt;red happy blue]]]
@@ -116,19 +116,29 @@ Because this world has never experienced any wrongdoing, nobody has ever thought
 &lt;img src=&quot;https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/small-garden-ideas-1614032371.jpg&quot; width=&quot;768&quot;&gt;
 [[Go back.-&gt;blue happy]]</tw-passagedata><tw-passagedata pid="17" name="blue happy red" tags="" position="1127,48.5" size="100,100">You ask about the world behind the Red Door.
 
-&quot;What is there to speak of? The world behind the Red Door is abosutely riddled with horrible things that people do to one another. They are very proud of their wonderful system that handles wrongdoers, but they need that system because they are all bad people! Here, there are no bad people, so what use would we have for this complicated system? Better to not need a system that deals with wrongdoers than to create the need for one by living with so many bad people.&quot;
+&quot;What is there to speak of? The world behind the Red Door is abosutely riddled with horrible things that people do to one another. I hear there are murders every week! They are very proud of their wonderful system that handles wrongdoers, but they need that system because they are all bad people! 
+
+&quot;Here, there are no bad people, so what use would we have for this complicated system? Better to not need a system that deals with wrongdoers than to create the need for one by living with so many bad people.&quot;
 &lt;img src=&quot;https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/small-garden-ideas-1614032371.jpg&quot; width=&quot;768&quot;&gt;
 [[Go back.-&gt;blue happy]]</tw-passagedata><tw-passagedata pid="18" name="blue happy green" tags="" position="1251,50.5" size="100,100">You ask about the world behind the Green Door.
 
-&quot;What they do to that child in the cage is unspeakable. If that child were here, there would be no need to treat them so terribly. Here, everyone has what they need to flourish. Behind the Green Door, there is one person that does not get what they need to even live a proper life. Our world is clearly better.&quot;
+&quot;What they do to that child in the cage is unspeakable. If that child were here, there would be no need to treat them so terribly. Here behind the Blue Door, everyone has what they need to flourish. Behind the Green Door, there is one person that does not get what they need to even live a proper life. Our world is therefore better.&quot;
 &lt;img src=&quot;https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/small-garden-ideas-1614032371.jpg&quot; width=&quot;768&quot;&gt;
 [[Go back.-&gt;blue happy]]</tw-passagedata><tw-passagedata pid="19" name="blue unhappy blue" tags="" position="1000,199.5" size="100,100">You ask about living in the world behind the Blue Door.
 
-&quot;There are no laws here! It&#39;s the wild west! Well, it&#39;s the wild west before anyone realized that they could do wrong with no consequences! Yesterday, I saw my neighbor standing at the edge of a cliff admiring the sunset. And I had a horrible thought that I could just push them off the cliff and murder them. I didn&#39;t. But I could. I know everyone in this place could do so much wrong. We are just lucky that none of us have fallen to temptation yet. Do you think this will last forever? What will happen when the first sociopathic murderer is born here? It might be you! Or me tomorrow! Or my neighbor on a bad day! We have no laws, no law enforcement, no rights, and no security. I&#39;ve been hoarding food, water, and as many bricks as I can in this house because one day our luck will run out and we will have nothing but ourselves to depend on. Leave me alone, and tell nobody about the food, water, and bricks I have in here.&quot;
+&quot;There are no laws here! It&#39;s the wild west! Well, it&#39;s the wild west before anyone realized that they could do wrong with no consequences!&quot;
+
+&quot;Yesterday, I saw my neighbor standing at the edge of a cliff admiring the sunset. And I had a horrible thought that I could just push them off the cliff and murder the,. I didn&#39;t. But I could. I know everyone in this place could do so much wrong. We are just lucky that none of us have fallen to temptation yet.&quot; 
+
+&quot;Do you think this will last forever? What will happen when the first sociopathic murderer is born here? It might be you! Or me tomorrow! Or my neighbor on a bad day! We have no laws, no law enforcement, no rights, and no security. I&#39;ve been hoarding food, water, and as many bricks as I can in this house because one day our luck will run out and we will have nothing but ourselves to depend on.&quot;
+
+&quot;Leave me alone, and tell nobody about the food, water, and bricks I have in here.&quot;
 &lt;img src=&quot;https://www.goodtherapy.org/blog/blog/wp-content/uploads/2015/04/peeking-through-blinds.jpg&quot; width=&quot;768&quot;&gt;
 [[Go back.-&gt;blue unhappy]]</tw-passagedata><tw-passagedata pid="20" name="blue unhappy red" tags="" position="1125,200.5" size="100,100">You ask about the world behind the Red Door.
 
-&quot;When our luck runs out, and wrongdoing happens here, we will be just like the people behind the Red Door, except we will have none of their ways of dealing with wrongdoers. I am capable of doing wrong. You are capable of doing wrong. Everyone in this world is capable of doing wrong. That we have not yet done wrong is coincidence. That we will do wrong in the future is near certain. Do not come to visit when that happens. We will have no way to stop the wrongdoing or the wrongdoers.&quot;
+&quot;When our luck runs out, and wrongdoing happens here, we will be just like the people behind the Red Door, except we will have none of their ways of dealing with wrongdoers.&quot;
+
+&quot;I am capable of doing wrong. You are capable of doing wrong. Everyone in this world is capable of doing wrong. That we have not yet done wrong is coincidence. That we will do wrong in the future is near certain. Do not come to visit when that happens. We will have no way to stop the wrongdoing or the wrongdoers.&quot;
 &lt;img src=&quot;https://www.goodtherapy.org/blog/blog/wp-content/uploads/2015/04/peeking-through-blinds.jpg&quot; width=&quot;768&quot;&gt;
 [[Go back.-&gt;blue unhappy]]</tw-passagedata><tw-passagedata pid="21" name="blue unhappy green" tags="" position="1249,200.5" size="100,100">You ask about the world behind the Green Door.
 
@@ -136,7 +146,11 @@ Because this world has never experienced any wrongdoing, nobody has ever thought
 &lt;img src=&quot;https://www.goodtherapy.org/blog/blog/wp-content/uploads/2015/04/peeking-through-blinds.jpg&quot; width=&quot;768&quot;&gt;
 [[Go back.-&gt;blue unhappy]]</tw-passagedata><tw-passagedata pid="22" name="red happy red" tags="" position="1001,324.5" size="100,100">You ask about living in the world behind the Red Door.
 
-&quot;This world is a good world. Everyone has the capacity to do wrong. Just because someone does wrong doesn't mean we should give up on them. I&#39;m proud of us. I&#39;m proud that we take care of people here, whether or not they have done wrong. Sometimes a wrongdoer and the wronged need to meet and speak to one another. Sometimes a wrongdoer needs to go out and try to repair the damage that they caused. Sometimes a wrongdoer needs to be made to think privately about their actions. Whatever wrongdoers need, we can provide it for them. They all come out better for it. We all have what we need here, whether you do wrong or you do good.&quot;
+&quot;This world is a good world. Everyone has the capacity to do wrong. Just because someone does wrong doesn&#39;t mean we should give up on them.&quot;
+
+&quot;I&#39;m proud of us. I&#39;m proud that we take care of people here, whether or not they have done wrong. Sometimes a wrongdoer and the wronged need to meet and speak to one another. Sometimes a wrongdoer needs to go out and try to repair the damage that they caused. Sometimes a wrongdoer needs to be made to think privately about their actions. Whatever wrongdoers need, we can provide it for them. They all come out better for it. We all have what we need here, whether you do wrong or you do good.&quot;
+
+&quot;Although I do admit it would be nice to have fewer murders.&quot;
 &lt;img src=&quot;https://scholarlykitchen.sspnet.org/wp-content/uploads/2020/06/iStock-1090431444.jpg&quot; width=&quot;768&quot;&gt;
 [[Go back.-&gt;red happy]]</tw-passagedata><tw-passagedata pid="23" name="red happy blue" tags="" position="1126,324.5" size="100,100">You ask about the world behind the Blue Door.
 
@@ -164,7 +178,7 @@ Because this world has never experienced any wrongdoing, nobody has ever thought
 &lt;img src=&quot;https://pyxis.nymag.com/v1/imgs/b5d/8d5/6c95047badf156b94d437ba610c8c4924b-adirondack-chair-lede.rsquare.w1200.jpg&quot; width=&quot;768&quot;&gt;
 [[Go back to entrance.-&gt;The Green Door]]</tw-passagedata><tw-passagedata pid="27" name="green happy all" tags="" position="1125,599.5" size="100,100">&quot;Our world has everything either of the other worlds could possibly offer. We have both an excellent system of dealing with wrongdoing and the good fortune of never having had to use it! What else could we need?&quot;
 &lt;img src=&quot;https://pyxis.nymag.com/v1/imgs/b5d/8d5/6c95047badf156b94d437ba610c8c4924b-adirondack-chair-lede.rsquare.w1200.jpg&quot; width=&quot;768&quot;&gt;
-[[Go back.-&gt;green happy]]</tw-passagedata><tw-passagedata pid="28" name="silence green" tags="" position="1251,600.5" size="100,100">They don&#39;t want to talk to you. They ignore you, and look away.
+[[Go back.-&gt;green happy]]</tw-passagedata><tw-passagedata pid="28" name="silence green" tags="" position="1251,600.5" size="100,100">They don&#39;t want to talk to you. They ignore you, and look away. It seems like they don;t want to risk you bringing up The Child again.
 &lt;img src=&quot;https://pyxis.nymag.com/v1/imgs/b5d/8d5/6c95047badf156b94d437ba610c8c4924b-adirondack-chair-lede.rsquare.w1200.jpg&quot; width=&quot;768&quot;&gt;
 [[Go back to entrance.-&gt;The Green Door]]</tw-passagedata><tw-passagedata pid="29" name="why" tags="" position="1001,749.5" size="100,100">You ask why.
 
@@ -173,7 +187,7 @@ Because this world has never experienced any wrongdoing, nobody has ever thought
 [[Ask them if they think they will make a difference by leaving.-&gt;difference]]
 [[Leave them alone.-&gt;The Green Door]]</tw-passagedata><tw-passagedata pid="30" name="difference" tags="" position="1127,749.5" size="100,100">You ask them if they think they will make a difference by leaving.
 
-&quot;The Child will suffer whether I stay or leave. But if I stay I will turn out just like that man relaxing over there in front of his house. Have you tried asking him about The Child? I may not be able to make a difference to that child, but I can make a difference to myself. I will not end up like that man relaxing in front of his house.&quot;
+&quot;The Child will suffer whether I stay or leave. But if I stay I will turn out just like that man relaxing over there in front of his house. Have you tried asking him about The Child? I may not be able to make a difference to that child, but I can make a difference to myself. I will not end up like that man relazing in front of his house.&quot;
 &lt;img src=&quot;https://www.roadaffair.com/wp-content/uploads/2019/05/packing-bag-shutterstock_1049701073.jpg&quot; width=&quot;768&quot;&gt;
 [[Leave them alone.-&gt;The Green Door]]</tw-passagedata><tw-passagedata pid="31" name="silence red" tags="" position="1126,474.5" size="100,100">You think it&#39;s best to give the man space to grieve, so you stand a distance a way and share in the silence.
 
@@ -188,6 +202,14 @@ Because this world has never experienced any wrongdoing, nobody has ever thought
 
 There is no wrongdoing behind the blue door. Not a single person in this world has experienced wrongdoing. What more can we ask of justice.
 
+As you bury the apple, the man peeking at you through the blinds shouts out to you. 
+
+&quot;ONE DAY THERE WILL BE WRONGDOING HERE. WHEN THAT DAY COMES THE ILLUSION OF PEACE WILL DROP, AND NOBODY WILL BE SAFE. IS YOUR VISION OF JUSTICE SO FRAGILE?&quot;
+
+As you bury the apple, the friendly gardener comes to speak with you.
+
+&quot;Ignore him. He has always been a paranoid weirdo. Yes, justice is fragile. It should be. That&#39;s what happens when you place trust in the community and its people. It means that even one person could disturb our sense of justice. Are we vulnerable? Yes. But to trust others is to be vulnerable. Thank you for understanding.&quot;
+
 Where do you bury the key? The key should be buried in the world where you would most want you and your family to live.
 &lt;img src=&quot;https://media.textadventures.co.uk/coverart/bc777079-2e03-45e6-9a70-ddf9b6531233.jpg&quot; width=&quot;768&quot;&gt;
 [[I bury it in the world behind the Blue Door.-&gt;key blue]]
@@ -195,6 +217,16 @@ Where do you bury the key? The key should be buried in the world where you would
 [[I bury it in the world behind the Green Door.-&gt;key green]]</tw-passagedata><tw-passagedata pid="35" name="apple red" tags="" position="501,899.5" size="100,100">You bury the apple in the world behind the Red Door.
 
 There may be wrongdoing, but there is no person in this world without protection by the law, without rights, and without access to rehabilitation should they need it. What more can we ask of justice.
+
+As you bury the apple, the person placing flowers atop the grave comes to speak with you. 
+
+&quot;Do you think this world has justice because of our laws and our courts and our judges? There are some wrongs that cannot ever be repaired. There are some wrongdoers that cannot ever be redeemed. The wrongs that happen here are so horrible they leave permanent scars on this world and its people.&quot; 
+
+&quot;The judges and the lawyers and the law makers can do what they would like in their grand courthouse once the bodies are recovered. Their vision of justice is a bandaid on a gaping wound.&quot;
+
+As you bury the apple, the judge making her way to the courthouse comes to speak with you.
+
+&quot;Justice is a process. It is a way of dealing with the world as it is and an expression of what we wish it could be. Thank you for understanding. The people in this world do bad things. I don&#39;t know if I can change that. But I understand, and I think you understand, that the pursuit of justice is an unending task.&quot;
 
 Where do you bury the key? The key should be buried in the world where you would most want you and your family to live.
 &lt;img src=&quot;https://media.textadventures.co.uk/coverart/bc777079-2e03-45e6-9a70-ddf9b6531233.jpg&quot; width=&quot;768&quot;&gt;
@@ -204,6 +236,16 @@ Where do you bury the key? The key should be buried in the world where you would
 
 The people of this world, except for one, have never experienced wrongdoing. The people of this world, except for one, enjoy the security and protection of an excellent system for dealing with wrongdoing and wrongdoers. It is not perfect justice, but it is certainly better than the other two options which either lack rights and security or are riddled with horrible crimes.
 
+As you bury the apple, the teenager who was packing their bags walks past you on their way to another world. They pause and turn to you.
+
+&quot;If you are going to bury that here, bury it in front of the Child in the center of the city. Look into their eyes as you lower the symbol of justice into the earth. You owe the Child that much at least.&quot;
+
+As you bury the apple, the person relaxing outside of their house comes to speak with you.
+
+&quot;A single imperfection in the form of a single child is far better than the gaping imperfections behind the other doors. The Blue Door&#39;s gaping imperfections is that it grants its citizens no rights or protections of the law. The Green Door&#39;s gaping imperfection is that everyone is beset by the effects of constant horrible wrongdoing. What is the suffering of a single child compared to the nearly perfect good it provides to this world?&quot;
+
+&quot;Perfect is the enemy of good. You know that. I know that. And we do not have to speak of this world&#39;s imperfection again.&quot;
+
 Where do you bury the key? The key should be buried in the world where you would most want you and your family to live.
 &lt;img src=&quot;https://media.textadventures.co.uk/coverart/bc777079-2e03-45e6-9a70-ddf9b6531233.jpg&quot; width=&quot;768&quot;&gt;
 [[I bury it in the world behind the Blue Door.-&gt;key blue]]
@@ -211,6 +253,14 @@ Where do you bury the key? The key should be buried in the world where you would
 [[I bury it in the world behind the Green Door.-&gt;key green]]</tw-passagedata><tw-passagedata pid="37" name="key blue" tags="" position="350,1024.5" size="100,100">You bury the key in the world behind the Blue Door.
 
 This world is safe, and also doesn&#39;t require the horrible suffering of an innocent child. The clear choice of the worlds to live in.
+
+As you move in, you see your neighbor standing at the edge of a cliff, enjoying the sunset. A horrible and intrusive thought comes to your mind.
+
+What would happen if you pushed them off the cliff?
+
+We all stifle such thoughts when they occasionally pop up. But it feels a little different in this world. The world where there is no law, judge, or prison to stop you.
+
+You can only hope that this world&#39;s good fortune in avoiding wrongdoing lasts at least until you pass away.
 
 Where do you bury the pen? The pen should be buried in the world that needs the most change.
 &lt;img src=&quot;https://media.textadventures.co.uk/coverart/bc777079-2e03-45e6-9a70-ddf9b6531233.jpg&quot; width=&quot;768&quot;&gt;
@@ -220,6 +270,12 @@ Where do you bury the pen? The pen should be buried in the world that needs the 
 
 This world is prepared to deal with any kind of wrongdoing that might befall you or your family. Plus it doesn&#39;t require the suffering of an innocent child. The clear choice of the worlds to live in.
 
+There is wrongdoing, but you see for yourself how effective this world&#39;s system of dealing with wrongdoing is at rehabilitating wrongdoers and addressing the impact of wrongs.
+
+The first week you move in, someone sets fire to your house. As the wrongdoer goes through the system, they are assigned to help rebuild the section of your house that you lost, and you are given the opportunity to speak to them about the impact their actions had on your life. At the end of the process, the wrongdoer seems changed. You don&#39;t think they will be starting any more fires from now on.
+
+But every night, just outside your window, you can see the same person placing flowers on the grave. If one day you find yourself in his shoes, losing something that cannot be replaced, would you see your choice to bury the key here in the same way? Hopefully it never comes to that. You should buy stronger door locks just in case.
+
 Where do you bury the pen? The pen should be buried in the world that needs the most change.
 &lt;img src=&quot;https://media.textadventures.co.uk/coverart/bc777079-2e03-45e6-9a70-ddf9b6531233.jpg&quot; width=&quot;768&quot;&gt;
 [[I bury it in the world behind the Blue Door.-&gt;pen blue]]
@@ -227,6 +283,8 @@ Where do you bury the pen? The pen should be buried in the world that needs the 
 [[I bury it in the world behind the Green Door.-&gt;pen green]]</tw-passagedata><tw-passagedata pid="39" name="key green" tags="" position="650,1024.5" size="100,100">You bury the key in the world behind the Green Door.
 
 The world behind the green door is safe if you are not The Child. It also guarantees security and rights if you are not The Child. But neither your nor any members of your family are The Child. The clear choice of the worlds to live in.
+
+When you move in, a city official comes to knock on your door. Every person who lives year must come to see the child in the center of the city, and you are no exception. You are scheduled to visit tomorrow. Are you ready to see the Child who bears the weight of this world on their shoulders? It is too late for regrets.
 
 Where do you bury the pen? The pen should be buried in the world that needs the most change.
 &lt;img src=&quot;https://media.textadventures.co.uk/coverart/bc777079-2e03-45e6-9a70-ddf9b6531233.jpg&quot; width=&quot;768&quot;&gt;
@@ -236,19 +294,19 @@ Where do you bury the pen? The pen should be buried in the world that needs the 
 
 They must be prepared for the wrongdoings and the wrongdoers that may come at any moment. Their luck cannot last forever.
 
-You have discharged your duties to the goddess of justice, your family, and the goddess of change. Thank you for your service. The pursuit of justice is an unending task. You will be called upon again one day.
+You have discharged your duties to the goddess of justice, your family, and the goddess of change. Thank you for your service. Your role in the pursuit of justice is not over. You will be called upon again one day.
 &lt;img src=&quot;https://media.textadventures.co.uk/coverart/bc777079-2e03-45e6-9a70-ddf9b6531233.jpg&quot; width=&quot;768&quot;&gt;
 [[Credits-&gt;Credits]]</tw-passagedata><tw-passagedata pid="41" name="pen red" tags="" position="500,1149.5" size="100,100">You bury the pen in the world behind the Red Door.
 
 No good world could have so much wrongdoing and so many wrongdoers. Not every wrong can be repaired, and not every wrongdoer can be redeemed.
 
-You have discharged your duties to the goddess of justice, your family, and the goddess of change. Thank you for your service. The pursuit of justice is an unending task. You will be called upon again one day.
+You have discharged your duties to the goddess of justice, your family, and the goddess of change. Thank you for your service. Your role in the pursuit of justice is not over. You will be called upon again one day. 
 &lt;img src=&quot;https://media.textadventures.co.uk/coverart/bc777079-2e03-45e6-9a70-ddf9b6531233.jpg&quot; width=&quot;768&quot;&gt;
 [[Credits-&gt;Credits]]</tw-passagedata><tw-passagedata pid="42" name="pen green" tags="" position="650,1149.5" size="100,100">You bury the pen in the world behind the Green Door.
 
 Nothing in this world can escape the fact that all of its prosperity is the result of the horrible suffering of an innocent child. This cannot be sustained.
 
-You have discharged your duties to the goddess of justice, your family, and the goddess of change. Thank you for your service. The pursuit of justice is an unending task. You will be called upon again one day.
+You have discharged your duties to the goddess of justice, your family, and the goddess of change. Thank you for your service. Your role in the pursuit of justice is not over. You will be called upon again one day.
 &lt;img src=&quot;https://media.textadventures.co.uk/coverart/bc777079-2e03-45e6-9a70-ddf9b6531233.jpg&quot; width=&quot;768&quot;&gt;
 [[Credits-&gt;Credits]]</tw-passagedata><tw-passagedata pid="43" name="Credits" tags="" position="501,1298.5" size="100,100">Interactive story written by Justin Shin.
 Originally written as part of a Virtual Intensive on Organizing for Social Justice, led by Elyem Chej.
